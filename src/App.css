@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+.container {
+  width: 1280px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn {
+  position: relative;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  display: block;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  transform-origin: center center;
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: transform 0.2s linear;
 }
 
-.App-header {
-  background-color: #282c34;
+.btn:hover::before {
+  transition-duration: 0.15s;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.task-body {
+  background-color: #4f6d7a;
   min-height: 100vh;
+  padding-top: 110px;
+  padding-bottom: 50px;
+  font-family: "Baloo 2", cursive;
+  border-radius: 3px;
+}
+
+.task-form {
+  padding: 20px;
+  background: #e3b505;
+  text-align: center;
+  border-radius: 3px;
+  /* box-shadow: 4px 4px #084c61; */
+}
+
+.task-form input {
+  height: 50px;
+  width: 400px;
+  background: #f0f0f0;
+  margin-right: 10px;
+  text-align: left;
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+
+.task-form button {
+  background-color: #084c61;
+  color: #f0f0f0;
+  height: 50px;
+  width: 70px;
+  border-radius: 3px;
+}
+
+.task-list {
+  margin-top: 20px;
+  padding: 40px 60px;
+  background: #56a3a6;
+  border-radius: 3px;
+}
+
+.task-item {
   display: flex;
-  flex-direction: column;
+  background-color: #f0f0f0;
+  padding: 10px 20px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 3px;
 }
 
-.App-link {
-  color: #61dafb;
+.task-item ~ .task-item {
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-text {
+  flex: 8;
+}
+
+.task-btn {
+  flex: 1;
+  text-align: center;
+  border-radius: 3px;
+  color: #f0f0f0;
+  padding: 10px;
+}
+
+.task-btn ~ .task-btn {
+  margin-left: 20px;
+}
+
+.task-btn i {
+  margin-left: 3px;
+}
+
+.task-btn.put {
+  background-color: #db504a;
+}
+
+.task-btn.delete {
+  background-color: #084c61;
+}
+
+.task-head {
+  font-family: "Abril Fatface", cursive;
+  font-size: 40px;
+  background-color: #084c61;
+  color: #e3b505;
+  padding: 20px 0 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
