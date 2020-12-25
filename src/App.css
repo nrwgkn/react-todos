@@ -87,6 +87,10 @@
   flex: 8;
 }
 
+.task-text.is-done {
+  text-decoration: line-through;
+}
+
 .task-btn {
   flex: 1;
   text-align: center;

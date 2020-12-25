@@ -14,10 +14,16 @@ const List = ({ deleteTodo, putTodo, todos }) => {
       {todos.map((todo) => {
         return (
           <li className="task-item" key={todo.id}>
-            <p className="task-text">{todo.body}</p>
+            {(() => {
+              if (todo.check) {
+                return <p className="task-text is-done">{todo.body}</p>;
+              } else {
+                return <p className="task-text">{todo.body}</p>;
+              }
+            })()}
             <button
               className="btn task-btn put"
-              // onClick={() => handlePutClick(todo.id)}
+              onClick={() => handlePutClick(todo.id)}
             >
               put<i className="far fa-check-circle"></i>
             </button>

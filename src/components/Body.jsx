@@ -16,8 +16,6 @@ const Body = () => {
     ]);
   };
 
-  console.log(todos);
-
   const deleteTodo = (id) => {
     const newTodos = todos.filter((todo) => todo.id !== id);
     setTodos(newTodos);
@@ -28,6 +26,7 @@ const Body = () => {
       if (todo.id === id) {
         todo.check = !todo.check;
       }
+      return todo;
     });
     setTodos(newTodos);
   };
