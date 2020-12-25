@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.af8cebef.chunk.css",
-    "main.js": "/static/js/main.de750ca3.chunk.js",
-    "main.js.map": "/static/js/main.de750ca3.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e37de31c.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e37de31c.js.map",
-    "static/js/2.30486f76.chunk.js": "/static/js/2.30486f76.chunk.js",
-    "static/js/2.30486f76.chunk.js.map": "/static/js/2.30486f76.chunk.js.map",
-    "static/js/3.8a34c93e.chunk.js": "/static/js/3.8a34c93e.chunk.js",
-    "static/js/3.8a34c93e.chunk.js.map": "/static/js/3.8a34c93e.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.af8cebef.chunk.css.map": "/static/css/main.af8cebef.chunk.css.map",
-    "static/js/2.30486f76.chunk.js.LICENSE.txt": "/static/js/2.30486f76.chunk.js.LICENSE.txt"
+    "main.css": "/react-todos/static/css/main.af8cebef.chunk.css",
+    "main.js": "/react-todos/static/js/main.de750ca3.chunk.js",
+    "main.js.map": "/react-todos/static/js/main.de750ca3.chunk.js.map",
+    "runtime-main.js": "/react-todos/static/js/runtime-main.5a637eae.js",
+    "runtime-main.js.map": "/react-todos/static/js/runtime-main.5a637eae.js.map",
+    "static/js/2.30486f76.chunk.js": "/react-todos/static/js/2.30486f76.chunk.js",
+    "static/js/2.30486f76.chunk.js.map": "/react-todos/static/js/2.30486f76.chunk.js.map",
+    "static/js/3.8a34c93e.chunk.js": "/react-todos/static/js/3.8a34c93e.chunk.js",
+    "static/js/3.8a34c93e.chunk.js.map": "/react-todos/static/js/3.8a34c93e.chunk.js.map",
+    "index.html": "/react-todos/index.html",
+    "static/css/main.af8cebef.chunk.css.map": "/react-todos/static/css/main.af8cebef.chunk.css.map",
+    "static/js/2.30486f76.chunk.js.LICENSE.txt": "/react-todos/static/js/2.30486f76.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e37de31c.js",
+    "static/js/runtime-main.5a637eae.js",
     "static/js/2.30486f76.chunk.js",
     "static/css/main.af8cebef.chunk.css",
     "static/js/main.de750ca3.chunk.js"
